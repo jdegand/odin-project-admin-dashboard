@@ -1,0 +1,412 @@
+:root {
+  --blue: #1992d4;
+  --yellow: #facc15;
+  --cardYellow: #f0b429;
+  --inputBackground: #e2e8f0;
+  --circle1Background: #e0f2fe;
+  --dog: #f0777d;
+  --gray: #a3a3a3;
+  --pink: #fda4af;
+  --sidebarWidth: 40%;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+} 
+
+button {
+  background-color: var(--blue);
+  border: none;
+  border-radius: 32px;
+  color: #fff;
+  font-weight: 700;
+  padding: 5px 20px;
+  font-size: 20px;
+}
+
+input {
+  border-radius: 16px;
+  background-color: var(--inputBackground);
+  border: none;
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px 10px 10px;
+}
+
+main {
+  background: var(--inputBackground);
+}
+
+#sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--blue);
+  height: 100%;
+  width: var(--sidebarWidth);
+  color: #fff;
+  font-weight: 700;
+}
+
+ul li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+  margin: 20px -10px;
+  align-items: center;
+}
+
+ul li:first-of-type {
+  margin-left: -20px;
+}
+
+.dashboard-img {
+  width: 40px;
+  height: 40px;
+}
+
+.dashboard-li {
+  font-size: 24px;
+}
+
+.settings {
+  margin-top: 50px;
+}
+
+.main-margin {
+  margin-left: var(--sidebarWidth);
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+}
+
+.projects {
+  padding-top: 5px;
+}
+
+.projects-grid {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.card-icons-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 50%;  /* used 250px when first mocked up */
+}
+
+.button-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.trend-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  padding: 20px;
+}
+
+.morgan-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  border-left: 7px solid var(--cardYellow);
+  padding: 10px;
+}
+
+.card-border-radius {
+  border-radius: 10px;
+}
+
+.announcement-card-padding {
+  padding: 10px 20px;
+}
+
+.announcement-card {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.heading-margin {
+  margin: 10px 5% 20px 5%;
+}
+
+/* Utility */
+
+.mobile-none {
+  display: none;
+}
+
+.desktop-none {
+  display: block;
+}
+
+.white-bg {
+  background: #fff;
+}
+
+.pink-bg {
+  background: var(--pink);
+}
+
+.gray-bg {
+  background: var(--gray);
+}
+
+.circle1-bg {
+  background: var(--circle1Background);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.fs-lg {
+  font-size: 32px;
+}
+
+.fs-md {
+  font-size: 20px;
+}
+
+.gray-text {
+  color: darkslategray;
+}
+
+.weight-500 {
+  font-weight: 500;
+}
+
+/* Hamburger Related */
+
+.d-none {
+  display: none;
+}
+
+#close {
+  color: #fff;
+  display: block;
+}
+
+.open {
+  display: block;
+}
+
+
+@media(min-width: 1000px){
+
+  :root {
+    --sidebarWidth: 20%;
+  }
+
+  .mobile-none {
+    display: block;
+  }
+
+  .desktop-none {
+    display: none;
+  }
+
+  input {
+    width: 40vw;
+  }
+
+  main {
+    padding: 0 25px 50px 25px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #close {
+    display: none;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .2fr 1fr 1fr 1fr;
+    row-gap: 0;
+    width: 50vw;
+  }
+
+  .projects-grid-header {
+    grid-column: 1 / -1;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-areas: "search-div search-div search-div"
+                         "projects projects announce"
+                         "projects projects announce"
+                         "projects projects trending"
+                         "projects projects trending"
+    ;
+    gap: 20px;
+  }
+
+  .projects {
+    display: grid;
+    grid-area: projects;
+    padding: 0;
+  }
+
+  .search-div {
+    display: grid;
+    grid-area: search-div;
+    margin: 0 -25px;
+    padding: 0 25px 25px 25px;
+  }
+
+  .search-div-input {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-wrapper {
+    grid-area: b;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "l . r";
+    align-items: center;
+  }
+
+  .profile-wrapper-left {
+    grid-area: l;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .button-row {
+    grid-area: r;
+  }
+
+  .search-div-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "t t m"
+                          "b b b"
+    ;
+    row-gap: 25px;
+    margin-top: 25px;
+  }
+
+  .morgan-div {
+    grid-area: m;
+  }
+
+  .announcements {
+    display: grid;
+    grid-area: announce;
+  }
+
+  .trending {
+    display: grid;
+    grid-area: trending;
+  }
+
+  .announcement-card {
+    width: inherit;
+    margin: 0;
+  }
+
+  .heading-margin {
+    margin: 10px 0 20px 0;
+  }
+
+}

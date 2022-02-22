@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Odin Project Admin Dashboard</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div id="sidebar" class="d-none">
+            <img src="close.svg" alt="Close Menu" id="close" class="pointer" />
+            <ul>
+                <li class="dashboard-li"><span><img class="dashboard-img" src="view-dashboard.svg" alt="" /></span>Dashboard</li>
+                <li tabindex="0" class="fs-md"><span><img src="home.svg" alt="" /></span>Profile</li>
+                <li tabindex="0" class="fs-md"><span><img src="message-reply.svg" alt="" /></span>Messages</li>
+                <li tabindex="0" class="fs-md"><span><img src="clock-time-three-outline.svg" alt="" /></span>History</li>
+                <li tabindex="0" class="fs-md"><span><img src="file-multiple-outline.svg" alt="" /></span>Tasks</li>
+                <li tabindex="0" class="fs-md"><span><img src="account-group.svg" alt="" /></span>Communities</li>
+                <li tabindex="0" class="fs-md settings"><span><img src="cog.svg" alt="" /></span>Settings</li>
+                <li tabindex="0" class="fs-md"><span><img src="help-box.svg" alt="Help" /></span>Support</li>
+                <li tabindex="0" class="fs-md"><span><img src="shield-check-outline.svg" alt="" /></span>Privacy</li>
+            </ul>
+        </div>
+        <img src="menu.svg" alt="Open Menu" id="menu" class="pointer" />
+        <div class="profile-pic desktop-none"></div>
+    </nav>
+    <main>
+        <header class="search-div white-bg mobile-none">
+            <div class="search-div-grid">
+                <div class="top-row">
+                    <div class="search-div-input">
+                        <label for="text-input" tabindex="0"><img src="magnify.svg" alt="Search" /></label>
+                        <input id="text-input" class="mobile-none" type="text" />
+                    </div>
+                </div>
+                <div class="morgan-div">
+                    <div tabindex="0" class="mobile-none"><img src="bell-ring-outline.svg" alt="Notifications" /></div>
+                    <div class="profile-pic"></div>
+                    <div class="bold">Morgan Oakley</div>
+                </div>
+                <div class="profile-wrapper">
+                    <div class="profile-wrapper-left">
+                        <div class="profile-pic"></div>
+                        <div class="hi-there">
+                            <div>Hi There,</div>
+                            <div class="bold"><span class="fs-lg">Morgan Oakley</span> (@morgan)</div>
+                        </div>
+                    </div>
+                    <div class="button-row">
+                        <div>
+                            <button>New</button>
+                        </div>
+                        <div>
+                            <button>Upload</button>
+                        </div>
+                        <div>
+                            <button>Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>    
+        <section class="projects">
+            <div class="projects-grid">
+                <div class="projects-grid-header">
+                    <h1>Your Projects</h1>
+                </div>
+                <article class="white-bg card card-border-radius">
+                    <h2>Super Cool Project</h2>
+                    <p class="gray-text weight-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt deleniti qui excepturi, doloremque eligendi, perferendis vero corporis similique quae, ullam quasi aliquam maiores neque dolores saepe non obcaecati tempora maxime!</p>
+                    <div class="card-icons-row">
+                        <span tabindex="0"><img src="star-plus-outline.svg" alt="star" /></span>
+                        <span tabindex="0"><img src="eye-plus-outline.svg" alt="watch" /></span>
+                        <span tabindex="0"><img src="source-fork.svg" alt="fork" /></span>
+                    </div>
+                </article>
+                <article class="white-bg card card-border-radius">
+                    <h2>Super Cool Project</h2>
+                    <p class="gray-text weight-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt deleniti qui excepturi, doloremque eligendi, perferendis vero corporis similique quae, ullam quasi aliquam maiores neque dolores saepe non obcaecati tempora maxime!</p>
+                    <div class="card-icons-row">
+                        <span tabindex="0"><img src="star-plus-outline.svg" alt="star" /></span>
+                        <span tabindex="0"><img src="eye-plus-outline.svg" alt="watch" /></span>
+                        <span tabindex="0"><img src="source-fork.svg" alt="fork" /></span>
+                    </div>
+                </article>
+                <article class="white-bg card card-border-radius"> 
+                    <h2>Super Cool Project</h2>
+                    <p class="gray-text weight-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt deleniti qui excepturi, doloremque eligendi, perferendis vero corporis similique quae, ullam quasi aliquam maiores neque dolores saepe non obcaecati tempora maxime!</p>
+                    <div class="card-icons-row">
+                        <span tabindex="0"><img src="star-plus-outline.svg" alt="star" /></span>
+                        <span tabindex="0"><img src="eye-plus-outline.svg" alt="watch" /></span>
+                        <span tabindex="0"><img src="source-fork.svg" alt="fork" /></span>
+                    </div>
+                </article>
+                <article class="white-bg card card-border-radius">
+                    <h2>Super Cool Project</h2>
+                    <p class="gray-text weight-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt deleniti qui excepturi, doloremque eligendi, perferendis vero corporis similique quae, ullam quasi aliquam maiores neque dolores saepe non obcaecati tempora maxime!</p>
+                    <div class="card-icons-row">
+                        <span tabindex="0"><img src="star-plus-outline.svg" alt="star" /></span>
+                        <span tabindex="0"><img src="eye-plus-outline.svg" alt="watch" /></span>
+                        <span tabindex="0"><img src="source-fork.svg" alt="fork" /></span>
+                    </div>
+                </article>
+                <article class="white-bg card card-border-radius">
+                    <h2>Super Cool Project</h2>
+                    <p class="gray-text weight-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt deleniti qui excepturi, doloremque eligendi, perferendis vero corporis similique quae, ullam quasi aliquam maiores neque dolores saepe non obcaecati tempora maxime!</p>
+                    <div class="card-icons-row">
+                        <span tabindex="0"><img src="star-plus-outline.svg" alt="star" /></span>
+                        <span tabindex="0"><img src="eye-plus-outline.svg" alt="watch" /></span>
+                        <span tabindex="0"><img src="source-fork.svg" alt="fork" /></span>
+                    </div>
+                </article>
+                <article class="white-bg card card-border-radius">
+                    <h2>Super Cool Project</h2>
+                    <p class="gray-text weight-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt deleniti qui excepturi, doloremque eligendi, perferendis vero corporis similique quae, ullam quasi aliquam maiores neque dolores saepe non obcaecati tempora maxime!</p>
+                    <div class="card-icons-row">
+                        <span tabindex="0"><img src="star-plus-outline.svg" alt="star" /></span>
+                        <span tabindex="0"><img src="eye-plus-outline.svg" alt="watch" /></span>
+                        <span tabindex="0"><img src="source-fork.svg" alt="fork" /></span>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <article class="announcements">
+            <div class="heading-margin">
+                <h2>Announcements</h2>
+            </div>
+            <div class="white-bg announcement-card announcement-card-padding card-border-radius">
+                <div>
+                    <h3>Site Maintence</h3>
+                    <p class="gray-text weight-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum magni officia sunt id libero, enim rem! Suscipit quaerat deleniti exercitationem eligendi omnis, sed distinctio praesentium. Eos suscipit asperiores enim molestias?</p>
+                </div>
+                <hr />
+                <div>
+                    <h3>Community Share Day</h3>
+                    <p class="gray-text weight-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum magni officia sunt id libero, enim rem! Suscipit quaerat deleniti exercitationem eligendi omnis, sed distinctio praesentium. Eos suscipit asperiores enim molestias?</p>
+                </div>
+                <hr />
+                <div>
+                    <h3>Updated Privacy Policy</h3>
+                    <p class="gray-text weight-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum magni officia sunt id libero, enim rem! Suscipit quaerat deleniti exercitationem eligendi omnis, sed distinctio praesentium. Eos suscipit asperiores enim molestias?</p>
+                </div>
+            </div>
+        </article>
+        <article class="trending"> 
+            <div class="heading-margin">
+                <h3>Trending</h3>
+            </div>
+            <div class="white-bg announcement-card card-border-radius">
+                <div class="trend-grid">
+                    <div class="profile-pic circle1-bg"></div>
+                    <div>
+                        <div class="bold">@username</div>
+                        <div class="gray-text weight-500">nickname</div>
+                    </div>
+                </div>
+                <div class="trend-grid">
+                    <div class="profile-pic"></div>
+                    <div>
+                        <div class="bold">@username</div>
+                        <div class="gray-text weight-500">nickname</div>
+                    </div>
+                </div>
+                <div class="trend-grid">
+                    <div class="profile-pic gray-bg"></div>
+                    <div>
+                        <div class="bold">@username</div>
+                        <div class="gray-text weight-500">nickname</div>
+                    </div>
+                </div>
+                <div class="trend-grid">
+                    <div class="profile-pic pink-bg"></div>
+                    <div>
+                        <div class="bold">@username</div>
+                        <div class="gray-text weight-500">nickname</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
