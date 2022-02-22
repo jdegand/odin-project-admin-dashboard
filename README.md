@@ -15,6 +15,8 @@
 
 ## Overview
 
+[Live Link](https://jdegand.github.io/odin-project-admin-dashboard/)
+
 ![](odin-project-admin-dashboard-desktop.png)
 
 ![](odin-project-admin-dashboard-mobile.png)
