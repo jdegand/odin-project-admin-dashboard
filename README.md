@@ -41,9 +41,7 @@ I don't think aside tag applies for either the sidebar, trending and announcemen
 
 Aside tag doesn't have much use so it can applied in questionable spots just to use it.  
 
-Originally had the js click on the menu to make sure the sidebar was displayed on first load.  This was before I added the resize observer.  
-Removed that code then the close button didn't work so I moved the close event listener outside the handle function. 
-Originally had it inside the handle function so I wouldn't add a listener to an element that might not even be rendered. 
+Originally had the js click on the menu to make sure the sidebar was displayed on first load.  This was before I added the resize observer.  Removed that code then the close button didn't work so I moved the close event listener outside the handle function. Originally had it inside the handle function so I wouldn't add a listener to an element that might not even be rendered. 
 
 This project idea led me to research and test out React-Admin.
 
